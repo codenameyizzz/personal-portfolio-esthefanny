@@ -12,16 +12,16 @@
   html {
     scroll-behavior: smooth;
     cursor: default;
-    background: #fff8fc;
+    background: #fffaf9;
   }
 
   body {
     background:
-      radial-gradient(circle at top center, rgba(244, 114, 182, 0.18), transparent 26%),
-      radial-gradient(circle at 16% 12%, rgba(236, 72, 153, 0.14), transparent 24%),
-      radial-gradient(circle at 82% 18%, rgba(251, 113, 133, 0.12), transparent 24%),
-      linear-gradient(180deg, #fffafc 0%, #fff3f8 44%, #ffe9f4 100%);
-    color: #3f1d36;
+      radial-gradient(circle at top center, rgba(251, 207, 232, 0.34), transparent 24%),
+      radial-gradient(circle at 16% 12%, rgba(244, 114, 182, 0.12), transparent 24%),
+      radial-gradient(circle at 84% 18%, rgba(253, 230, 138, 0.12), transparent 26%),
+      linear-gradient(180deg, #fffcfb 0%, #fff7f8 38%, #fff2f5 70%, #fef0f3 100%);
+    color: #4b2035;
     font-family: var(--font-sans);
     letter-spacing: -0.02em;
   }
@@ -41,17 +41,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(190, 24, 93, 0.22);
+  background: rgba(190, 24, 93, 0.18);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(190, 24, 93, 0.34);
+  background: rgba(190, 24, 93, 0.28);
 }
 
 ::selection {
-  background-color: rgba(236, 72, 153, 0.2);
-  color: #4a1231;
+  background-color: rgba(244, 114, 182, 0.18);
+  color: #5b223e;
 }
 
 .material-symbols-outlined {

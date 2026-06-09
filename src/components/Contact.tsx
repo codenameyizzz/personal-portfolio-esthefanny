@@ -74,7 +74,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
 
           <a
             href={`mailto:${PERSONAL_INFO.email}`}
-            className="mt-6 inline-flex items-center gap-2 rounded-full border border-pink-200 bg-pink-50/80 px-4 py-2 text-sm text-pink-700 transition-all hover:bg-pink-100"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50/85 px-4 py-2 text-sm text-rose-700 transition-all hover:bg-white/92"
           >
             <Mail size={15} />
             {PERSONAL_INFO.email}
@@ -88,7 +88,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-pink-200 bg-pink-50/80 text-pink-700 transition-all hover:bg-pink-100 hover:text-pink-800"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-rose-200 bg-rose-50/85 text-rose-700 transition-all hover:bg-white/92 hover:text-rose-900"
                 aria-label={social.handle}
               >
                 {social.icon}
@@ -112,7 +112,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={(event) => setFormData({ ...formData, name: event.target.value })}
-                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
+                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-rose-300"
               />
               <input
                 type="email"
@@ -120,7 +120,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={(event) => setFormData({ ...formData, email: event.target.value })}
-                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
+                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-rose-300"
               />
             </div>
 
@@ -129,7 +129,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
               placeholder="Subject"
               value={formData.subject}
               onChange={(event) => setFormData({ ...formData, subject: event.target.value })}
-              className="w-full rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
+              className="w-full rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-rose-300"
             />
 
             <textarea
@@ -138,7 +138,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
               placeholder="Message"
               value={formData.content}
               onChange={(event) => setFormData({ ...formData, content: event.target.value })}
-              className="w-full resize-none rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm leading-6 text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
+              className="w-full resize-none rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm leading-6 text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-rose-300"
             />
 
             <AnimatePresence>
@@ -147,7 +147,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="flex items-center gap-2 rounded-2xl border border-pink-200 bg-pink-50/85 px-4 py-3 text-sm text-pink-700"
+                  className="flex items-center gap-2 rounded-2xl border border-rose-200 bg-rose-50/88 px-4 py-3 text-sm text-rose-700"
                 >
                   <CheckCircle2 size={16} />
                   <span>Message saved locally to the inbox panel.</span>
@@ -158,7 +158,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-fuchsia-600 via-pink-500 to-rose-400 px-5 py-3 text-sm font-medium text-white shadow-[0_14px_35px_rgba(236,72,153,0.28)] transition-all hover:brightness-105 disabled:opacity-60"
+              className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-rose-300 via-pink-300 to-amber-100 px-5 py-3 text-sm font-medium text-rose-950 shadow-[0_14px_35px_rgba(244,114,182,0.12)] transition-all hover:brightness-105 disabled:opacity-60"
             >
               {loading ? 'Sending...' : 'Send Message'}
               {!loading && <Send size={15} />}

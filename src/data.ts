@@ -4,6 +4,7 @@
  */
 
 import { Project, Experience, Skill, Certification, Testimonial } from './types';
+import fannyPhoto from '../assets/Fanny.jpeg';
 
 export const PERSONAL_INFO = {
   name: 'Esthefany Christin Sipahutar',
@@ -16,7 +17,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com/esthefanysipahutar',
   linkedin: '',
   twitter: '',
-  avatarUrl: '',
+  avatarUrl: fannyPhoto,
   currentFocus:
     'Building stronger full-stack capability with Laravel and React.js while improving database, API, and microservices understanding.',
   stats: [],
@@ -29,10 +30,10 @@ export const PROJECTS: Project[] = [
     description:
       'A public-facing information website for SMA Swasta Rumah Harapan Tobasa that centralizes school profile, curriculum, achievements, and announcements.',
     longDescription:
-      'A public-facing information website developed for SMA Swasta Rumah Harapan Tobasa, designed to provide key information about the school including its profile, vision and mission, educational curriculum, achievements, and public announcements. The site serves as a centralized platform to improve the school’s digital presence and communication with the public.',
+      'A public-facing information website developed for SMA Swasta Rumah Harapan Tobasa, designed to provide key information about the school including its profile, vision and mission, educational curriculum, achievements, and public announcements. The site serves as a centralized platform to improve the school\'s digital presence and communication with the public.',
     category: 'web',
     tags: ['Laravel 11', 'CSS', 'SQLyog', 'XAMPP', 'GitHub', 'Figma'],
-    githubUrl: 'https://github.com/codenameyizzz',
+    githubUrl: 'https://github.com/esthefanysipahutar',
     image:
       'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=900',
     featured: true,
@@ -96,22 +97,17 @@ export const EXPERIENCES: Experience[] = [
       'Strengthening practical skills in Laravel and React.js for modern web development.',
       'Developing a solid foundation in MySQL, SQLite, API design, and software engineering workflow.',
     ],
-    logoText: 'ITD',
-    logoBg: 'bg-pink-500',
   },
 ];
 
 export const SKILLS: Skill[] = [
   { name: 'JavaScript', level: 82, category: 'languages' },
   { name: 'PHP', level: 76, category: 'languages' },
-
   { name: 'React', level: 84, category: 'frameworks' },
   { name: 'Laravel', level: 83, category: 'frameworks' },
   { name: 'Node.js', level: 70, category: 'frameworks' },
-
   { name: 'MySQL', level: 80, category: 'databases' },
   { name: 'SQLite', level: 73, category: 'databases' },
-
   { name: 'GitHub', level: 82, category: 'tools' },
   { name: 'Visual Studio Code', level: 88, category: 'tools' },
   { name: 'SQLyog', level: 72, category: 'tools' },

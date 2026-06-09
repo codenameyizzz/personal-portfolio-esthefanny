@@ -25,13 +25,11 @@ export interface Experience {
   period: string;
   description: string;
   bullets: string[];
-  logoText: string;
-  logoBg: string;
 }
 
 export interface Skill {
   name: string;
-  level: number; // 0-100 percentage
+  level: number;
   category: 'languages' | 'frameworks' | 'databases' | 'tools';
   iconName?: string;
 }

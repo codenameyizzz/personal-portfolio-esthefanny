@@ -64,7 +64,7 @@ export default function Projects() {
                   {project.tags.slice(0, 4).map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-pink-200 bg-pink-50/85 px-3 py-1 text-xs text-pink-700"
+                      className="rounded-full border border-rose-200 bg-rose-50/88 px-3 py-1 text-xs text-rose-700"
                     >
                       {tag}
                     </span>
@@ -77,7 +77,7 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-pink-700 transition-colors hover:text-fuchsia-700"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-rose-700 transition-colors hover:text-rose-900"
                     >
                       View GitHub
                       <ArrowRight size={15} />

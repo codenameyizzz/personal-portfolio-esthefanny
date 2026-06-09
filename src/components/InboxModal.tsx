@@ -43,7 +43,7 @@ export default function InboxModal({
           >
             <div className="flex items-center justify-between border-b border-rose-100 bg-rose-50/80 px-6 py-4">
               <div className="flex items-center gap-2">
-                <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-pink-500" />
+                <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-rose-300" />
                 <h3 className="font-display text-sm font-black uppercase tracking-wider text-rose-950">
                   Local Inbox Dashboard
                 </h3>
@@ -58,7 +58,7 @@ export default function InboxModal({
             </div>
 
             <div className="flex-grow space-y-4 overflow-y-auto p-6">
-              <div className="rounded-xl border border-pink-200 bg-pink-50/80 p-3 font-sans text-[10px] leading-relaxed text-pink-700">
+              <div className="rounded-xl border border-rose-200 bg-rose-50/85 p-3 font-sans text-[10px] leading-relaxed text-rose-700">
                 This inbox stores contact form entries locally in the browser via{' '}
                 <code>localStorage</code> so you can test the interaction without a backend.
               </div>
