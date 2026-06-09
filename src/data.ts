@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
   longBio:
     'First-year Applied Software Engineering (D4) student with experience in software development projects. Developing strong proficiency in using Laravel and React.js for full-stack web development, with a solid background in database management using MySQL.',
   location: 'Institut Teknologi Del',
-  email: 'esthefanysipahutar@gmail.com',
+  email: 'esthefanychristin@gmail.com',
   github: 'https://github.com/esthefanysipahutar',
   linkedin: '',
   twitter: '',
