@@ -22,10 +22,10 @@ export default function Skillsets() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.25 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="mx-auto max-w-6xl scroll-mt-28 rounded-[30px] border border-white/10 bg-white/[0.03] px-6 py-7 backdrop-blur-xl sm:px-8"
+      className="mx-auto max-w-6xl scroll-mt-28 rounded-[30px] border border-rose-200/70 bg-white/60 px-6 py-7 shadow-[0_24px_70px_rgba(244,114,182,0.12)] backdrop-blur-xl sm:px-8"
     >
-      <p className="text-sm uppercase tracking-[0.22em] text-white/45">skills</p>
-      <h2 className="mt-2 text-4xl font-normal tracking-tight text-white sm:text-5xl">
+      <p className="text-sm uppercase tracking-[0.22em] text-rose-700/65">skills</p>
+      <h2 className="mt-2 text-4xl font-normal tracking-tight text-rose-950 sm:text-5xl">
         Technical Skills
       </h2>
 
@@ -37,14 +37,14 @@ export default function Skillsets() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.45 }}
             transition={{ duration: 0.5, delay: index * 0.05, ease: 'easeOut' }}
-            className="rounded-[24px] border border-white/10 bg-white/[0.04] p-5"
+            className="rounded-[24px] border border-rose-200/75 bg-white/72 p-5"
           >
-            <h3 className="text-lg font-medium tracking-tight text-white">{group.title}</h3>
+            <h3 className="text-lg font-medium tracking-tight text-rose-950">{group.title}</h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {SKILLS.filter((skill) => skill.category === group.id).map((skill) => (
                 <span
                   key={skill.name}
-                  className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-sm text-white/65"
+                  className="rounded-full border border-pink-200 bg-pink-50/85 px-3 py-1.5 text-sm text-pink-700"
                 >
                   {skill.name}
                 </span>

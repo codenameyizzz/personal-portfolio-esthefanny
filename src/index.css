@@ -12,15 +12,16 @@
   html {
     scroll-behavior: smooth;
     cursor: default;
-    background: #000;
+    background: #fff8fc;
   }
 
   body {
     background:
-      radial-gradient(circle at top center, rgba(255, 255, 255, 0.08), transparent 28%),
-      radial-gradient(circle at 20% 10%, rgba(120, 119, 198, 0.08), transparent 22%),
-      #000;
-    color: #fff;
+      radial-gradient(circle at top center, rgba(244, 114, 182, 0.18), transparent 26%),
+      radial-gradient(circle at 16% 12%, rgba(236, 72, 153, 0.14), transparent 24%),
+      radial-gradient(circle at 82% 18%, rgba(251, 113, 133, 0.12), transparent 24%),
+      linear-gradient(180deg, #fffafc 0%, #fff3f8 44%, #ffe9f4 100%);
+    color: #3f1d36;
     font-family: var(--font-sans);
     letter-spacing: -0.02em;
   }
@@ -40,17 +41,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(190, 24, 93, 0.22);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(190, 24, 93, 0.34);
 }
 
 ::selection {
-  background-color: rgba(255, 255, 255, 0.92);
-  color: #000;
+  background-color: rgba(236, 72, 153, 0.2);
+  color: #4a1231;
 }
 
 .material-symbols-outlined {

@@ -76,24 +76,24 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-transparent text-rose-950">
       <motion.div
-        className="fixed left-0 right-0 top-0 z-[60] h-px origin-left bg-white/75"
+        className="fixed left-0 right-0 top-0 z-[60] h-1 origin-left bg-gradient-to-r from-fuchsia-600 via-pink-500 to-rose-400 shadow-[0_0_24px_rgba(236,72,153,0.45)]"
         style={{ scaleX: progressScaleX }}
       />
 
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <motion.div
           style={{ y: topGlowY }}
-          className="absolute left-1/2 top-[-9rem] h-72 w-72 -translate-x-1/2 rounded-full bg-white/10 blur-3xl"
+          className="absolute left-1/2 top-[-9rem] h-80 w-80 -translate-x-1/2 rounded-full bg-fuchsia-300/35 blur-3xl"
         />
         <motion.div
           style={{ y: leftGlowY }}
-          className="absolute left-[15%] top-[18rem] h-48 w-48 rounded-full bg-slate-500/10 blur-3xl"
+          className="absolute left-[12%] top-[18rem] h-56 w-56 rounded-full bg-pink-300/30 blur-3xl"
         />
         <motion.div
           style={{ y: rightGlowY }}
-          className="absolute bottom-[12rem] right-[10%] h-60 w-60 rounded-full bg-neutral-400/10 blur-3xl"
+          className="absolute bottom-[10rem] right-[8%] h-72 w-72 rounded-full bg-rose-300/28 blur-3xl"
         />
       </div>
 
@@ -115,10 +115,10 @@ export default function App() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.6 }}
           transition={{ duration: 0.55, ease: 'easeOut' }}
-          className="mx-auto flex max-w-6xl items-center justify-between rounded-[24px] border border-white/10 bg-white/[0.03] px-6 py-4 text-sm text-white/60 backdrop-blur-xl"
+          className="mx-auto flex max-w-6xl items-center justify-between rounded-[24px] border border-rose-200/70 bg-white/65 px-6 py-4 text-sm text-rose-900/72 shadow-[0_18px_60px_rgba(244,114,182,0.14)] backdrop-blur-xl"
         >
           <div className="flex items-center gap-2">
-            <ShieldCheck size={14} className="text-white/70" />
+            <ShieldCheck size={14} className="text-pink-600" />
             <span>Esthefany Christin Sipahutar</span>
           </div>
           <span className="hidden sm:inline">Software Engineering Student Portfolio</span>

@@ -59,21 +59,22 @@ export default function Contact({ onSendMessage }: ContactProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.22 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="mx-auto max-w-6xl scroll-mt-28 rounded-[30px] border border-white/10 bg-white/[0.03] px-6 py-7 backdrop-blur-xl sm:px-8"
+      className="mx-auto max-w-6xl scroll-mt-28 rounded-[30px] border border-rose-200/70 bg-white/60 px-6 py-7 shadow-[0_24px_70px_rgba(244,114,182,0.12)] backdrop-blur-xl sm:px-8"
     >
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <p className="text-sm uppercase tracking-[0.22em] text-white/45">contact</p>
-          <h2 className="mt-2 text-4xl font-normal tracking-tight text-white sm:text-5xl">
+          <p className="text-sm uppercase tracking-[0.22em] text-rose-700/65">contact</p>
+          <h2 className="mt-2 text-4xl font-normal tracking-tight text-rose-950 sm:text-5xl">
             Let&apos;s connect
           </h2>
-          <p className="mt-4 max-w-md text-base leading-7 text-white/62">
-            You can reach me through email or GitHub. The form below still works locally and stores messages in the inbox panel for testing.
+          <p className="mt-4 max-w-md text-base leading-7 text-rose-950/70">
+            You can reach me through email or GitHub. The form below still works locally and
+            stores messages in the inbox panel for testing.
           </p>
 
           <a
             href={`mailto:${PERSONAL_INFO.email}`}
-            className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/78 transition-all hover:bg-white/[0.08] hover:text-white"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-pink-200 bg-pink-50/80 px-4 py-2 text-sm text-pink-700 transition-all hover:bg-pink-100"
           >
             <Mail size={15} />
             {PERSONAL_INFO.email}
@@ -87,7 +88,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/72 transition-all hover:bg-white/[0.08] hover:text-white"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-pink-200 bg-pink-50/80 text-pink-700 transition-all hover:bg-pink-100 hover:text-pink-800"
                 aria-label={social.handle}
               >
                 {social.icon}
@@ -101,7 +102,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.45 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="rounded-[24px] border border-white/10 bg-white/[0.04] p-5"
+          className="rounded-[24px] border border-rose-200/75 bg-white/72 p-5"
         >
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -111,7 +112,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={(event) => setFormData({ ...formData, name: event.target.value })}
-                className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-hidden placeholder:text-white/32 focus:border-white/24"
+                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
               />
               <input
                 type="email"
@@ -119,7 +120,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={(event) => setFormData({ ...formData, email: event.target.value })}
-                className="rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-hidden placeholder:text-white/32 focus:border-white/24"
+                className="rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
               />
             </div>
 
@@ -128,7 +129,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
               placeholder="Subject"
               value={formData.subject}
               onChange={(event) => setFormData({ ...formData, subject: event.target.value })}
-              className="w-full rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-hidden placeholder:text-white/32 focus:border-white/24"
+              className="w-full rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
             />
 
             <textarea
@@ -137,7 +138,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
               placeholder="Message"
               value={formData.content}
               onChange={(event) => setFormData({ ...formData, content: event.target.value })}
-              className="w-full resize-none rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm leading-6 text-white outline-hidden placeholder:text-white/32 focus:border-white/24"
+              className="w-full resize-none rounded-2xl border border-rose-200 bg-white/92 px-4 py-3 text-sm leading-6 text-rose-950 outline-hidden placeholder:text-rose-400 focus:border-pink-400"
             />
 
             <AnimatePresence>
@@ -146,7 +147,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm text-white/78"
+                  className="flex items-center gap-2 rounded-2xl border border-pink-200 bg-pink-50/85 px-4 py-3 text-sm text-pink-700"
                 >
                   <CheckCircle2 size={16} />
                   <span>Message saved locally to the inbox panel.</span>
@@ -157,7 +158,7 @@ export default function Contact({ onSendMessage }: ContactProps) {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-medium text-black transition-all hover:bg-white/90 disabled:opacity-60"
+              className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-fuchsia-600 via-pink-500 to-rose-400 px-5 py-3 text-sm font-medium text-white shadow-[0_14px_35px_rgba(236,72,153,0.28)] transition-all hover:brightness-105 disabled:opacity-60"
             >
               {loading ? 'Sending...' : 'Send Message'}
               {!loading && <Send size={15} />}

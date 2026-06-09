@@ -16,9 +16,9 @@ export default function ExtraAndReviews() {
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="mx-auto grid max-w-6xl grid-cols-1 gap-5 lg:grid-cols-[1fr_1fr]"
     >
-      <div className="rounded-[30px] border border-white/10 bg-white/[0.03] px-6 py-7 backdrop-blur-xl sm:px-8">
-        <p className="text-sm uppercase tracking-[0.22em] text-white/45">snapshot</p>
-        <h2 className="mt-2 text-4xl font-normal tracking-tight text-white sm:text-5xl">
+      <div className="rounded-[30px] border border-rose-200/70 bg-white/60 px-6 py-7 shadow-[0_24px_70px_rgba(244,114,182,0.12)] backdrop-blur-xl sm:px-8">
+        <p className="text-sm uppercase tracking-[0.22em] text-rose-700/65">snapshot</p>
+        <h2 className="mt-2 text-4xl font-normal tracking-tight text-rose-950 sm:text-5xl">
           Profile Summary
         </h2>
 
@@ -30,19 +30,19 @@ export default function ExtraAndReviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.45 }}
               transition={{ duration: 0.5, delay: index * 0.06, ease: 'easeOut' }}
-              className="rounded-[22px] border border-white/10 bg-white/[0.04] p-5"
+              className="rounded-[22px] border border-rose-200/75 bg-white/72 p-5"
             >
-              <h3 className="text-lg font-medium text-white">{item.title}</h3>
-              <p className="mt-2 text-sm text-white/58">{item.issuer}</p>
-              <p className="mt-1 text-sm text-white/45">{item.date}</p>
+              <h3 className="text-lg font-medium text-rose-950">{item.title}</h3>
+              <p className="mt-2 text-sm text-rose-950/68">{item.issuer}</p>
+              <p className="mt-1 text-sm text-rose-700/68">{item.date}</p>
             </motion.div>
           ))}
         </div>
       </div>
 
-      <div className="rounded-[30px] border border-white/10 bg-white/[0.03] px-6 py-7 backdrop-blur-xl sm:px-8">
-        <p className="text-sm uppercase tracking-[0.22em] text-white/45">focus</p>
-        <h2 className="mt-2 text-4xl font-normal tracking-tight text-white sm:text-5xl">
+      <div className="rounded-[30px] border border-rose-200/70 bg-white/60 px-6 py-7 shadow-[0_24px_70px_rgba(244,114,182,0.12)] backdrop-blur-xl sm:px-8">
+        <p className="text-sm uppercase tracking-[0.22em] text-rose-700/65">focus</p>
+        <h2 className="mt-2 text-4xl font-normal tracking-tight text-rose-950 sm:text-5xl">
           Project Strengths
         </h2>
 
@@ -54,13 +54,13 @@ export default function ExtraAndReviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.45 }}
               transition={{ duration: 0.5, delay: index * 0.06, ease: 'easeOut' }}
-              className="rounded-[22px] border border-white/10 bg-white/[0.04] p-5"
+              className="rounded-[22px] border border-rose-200/75 bg-white/72 p-5"
             >
-              <h3 className="text-lg font-medium text-white">{project.title}</h3>
+              <h3 className="text-lg font-medium text-rose-950">{project.title}</h3>
               {project.highlights && project.highlights.length > 0 && (
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-white/62">
+                <ul className="mt-3 space-y-2 text-sm leading-6 text-rose-950/68">
                   {project.highlights.slice(0, 3).map((highlight, highlightIndex) => (
-                    <li key={highlightIndex}>• {highlight}</li>
+                    <li key={highlightIndex}>- {highlight}</li>
                   ))}
                 </ul>
               )}

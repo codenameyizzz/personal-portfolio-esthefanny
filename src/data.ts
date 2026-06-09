@@ -97,7 +97,7 @@ export const EXPERIENCES: Experience[] = [
       'Developing a solid foundation in MySQL, SQLite, API design, and software engineering workflow.',
     ],
     logoText: 'ITD',
-    logoBg: 'bg-neutral-900',
+    logoBg: 'bg-pink-500',
   },
 ];
 

@@ -57,7 +57,7 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-5 sm:px-6">
-      <div className="mx-auto max-w-6xl rounded-[22px] border border-white/10 bg-black/40 px-5 py-4 text-white backdrop-blur-2xl">
+      <div className="mx-auto max-w-6xl rounded-[22px] border border-rose-200/80 bg-white/68 px-5 py-4 text-rose-950 shadow-[0_20px_70px_rgba(244,114,182,0.16)] backdrop-blur-2xl">
         <div className="flex items-center justify-between gap-6">
           <nav className="hidden items-center gap-7 md:flex">
             {navItems.map((item) => (
@@ -65,7 +65,7 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`cursor-pointer text-sm font-medium tracking-tight transition-all ${
-                  activeSection === item.id ? 'text-white' : 'text-white/55 hover:text-white'
+                  activeSection === item.id ? 'text-pink-700' : 'text-rose-900/55 hover:text-pink-700'
                 }`}
               >
                 {item.label}
@@ -77,7 +77,7 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
             {messageCount > 0 && (
               <button
                 onClick={onOpenInbox}
-                className="hidden rounded-full border border-white/12 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/80 transition-all hover:bg-white/[0.08] hover:text-white sm:inline-flex"
+                className="hidden rounded-full border border-pink-200 bg-pink-100/70 px-3 py-1.5 text-xs font-medium text-pink-700 transition-all hover:bg-pink-200/80 sm:inline-flex"
               >
                 Inbox ({messageCount})
               </button>
@@ -85,14 +85,14 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
 
             <button
               onClick={() => scrollToSection('hero')}
-              className="cursor-pointer text-sm font-medium tracking-tight text-white"
+              className="cursor-pointer text-sm font-semibold tracking-tight text-rose-950"
             >
               ECS.
             </button>
 
             <button
               onClick={() => setIsOpen((prev) => !prev)}
-              className="inline-flex cursor-pointer rounded-full border border-white/10 bg-white/[0.05] p-2 text-white md:hidden"
+              className="inline-flex cursor-pointer rounded-full border border-rose-200 bg-white/75 p-2 text-pink-700 md:hidden"
               aria-label="Toggle navigation"
             >
               {isOpen ? <X size={18} /> : <Menu size={18} />}
@@ -108,13 +108,13 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
               exit={{ opacity: 0, height: 0 }}
               className="overflow-hidden md:hidden"
             >
-              <div className="mt-4 flex flex-col gap-3 border-t border-white/10 pt-4">
+              <div className="mt-4 flex flex-col gap-3 border-t border-rose-200/80 pt-4">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
                     className={`cursor-pointer py-1 text-left text-sm transition-colors ${
-                      activeSection === item.id ? 'text-white' : 'text-white/60'
+                      activeSection === item.id ? 'text-pink-700' : 'text-rose-900/60'
                     }`}
                   >
                     {item.label}
@@ -123,7 +123,7 @@ export default function Header({ onOpenInbox, messageCount }: HeaderProps) {
                 {messageCount > 0 && (
                   <button
                     onClick={onOpenInbox}
-                    className="mt-1 w-fit rounded-full border border-white/12 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/80"
+                    className="mt-1 w-fit rounded-full border border-pink-200 bg-pink-100/70 px-3 py-1.5 text-xs font-medium text-pink-700"
                   >
                     Inbox ({messageCount})
                   </button>
