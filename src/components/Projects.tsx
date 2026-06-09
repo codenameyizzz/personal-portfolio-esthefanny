@@ -1,0 +1,89 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React from 'react';
+import { motion } from 'motion/react';
+import { ArrowRight } from 'lucide-react';
+import { PROJECTS } from '../data';
+
+export default function Projects() {
+  return (
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="mx-auto max-w-6xl scroll-mt-28"
+    >
+      <div className="mb-5 px-1">
+        <p className="text-sm uppercase tracking-[0.22em] text-white/45">portfolio</p>
+        <h2 className="mt-2 text-4xl font-normal tracking-tight text-white sm:text-5xl">
+          My Projects
+        </h2>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-white/62">
+          Real project work taken from my CV, covering educational platforms, institutional websites, and a public service system built with Laravel and React.js.
+        </p>
+      </div>
+
+      <div className="no-scrollbar overflow-x-auto">
+        <div className="flex gap-4 pb-2">
+          {PROJECTS.map((project, index) => (
+            <motion.article
+              key={project.id}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.35 }}
+              transition={{ duration: 0.55, delay: index * 0.05, ease: 'easeOut' }}
+              className="flex min-h-[24rem] min-w-[20rem] max-w-[20rem] flex-col rounded-[28px] border border-white/10 bg-white/[0.04] p-4 backdrop-blur-xl sm:min-w-[24rem] sm:max-w-[24rem]"
+            >
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  referrerPolicy="no-referrer"
+                  className="h-44 w-full rounded-[20px] object-cover"
+                />
+              )}
+
+              <div className="mt-4 flex flex-1 flex-col">
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="text-xl font-normal tracking-tight text-white">{project.title}</h3>
+                </div>
+
+                <p className="mt-4 flex-1 text-sm leading-6 text-white/62">{project.description}</p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.tags.slice(0, 4).map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-white/56"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {project.githubUrl && (
+                  <div className="mt-5">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-white/82 transition-colors hover:text-white"
+                    >
+                      View GitHub
+                      <ArrowRight size={15} />
+                    </a>
+                  </div>
+                )}
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </motion.section>
+  );
+}
