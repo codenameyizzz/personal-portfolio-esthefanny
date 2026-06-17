@@ -89,7 +89,7 @@ export const EXPERIENCES: Experience[] = [
     company: 'Institut Teknologi Del',
     role: 'Undergraduate Program in Software Engineering',
     location: 'Aug 2024 - Sep 2028 (Expected)',
-    period: 'Cumulative GPA: 3.2 / 4.0',
+    period: 'Cumulative GPA: 3.27 / 4.0',
     description:
       'Currently studying Applied Software Engineering (D4) with a focus on practical software development, full-stack web technologies, and database-driven application development.',
     bullets: [
@@ -127,7 +127,7 @@ export const CERTIFICATIONS: Certification[] = [
     id: 'gpa-record',
     title: 'Current Cumulative GPA',
     issuer: 'Institut Teknologi Del',
-    date: '3.2 / 4.0',
+    date: '3.27 / 4.0',
   },
   {
     id: 'focus-stack',
