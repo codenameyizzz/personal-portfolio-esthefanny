@@ -138,9 +138,9 @@ export default function Hero() {
                 </div>
 
                 <div className="mt-4 rounded-[20px] border border-rose-100 bg-white/76 px-4 py-4">
-                  <p className="text-xs uppercase tracking-[0.26em] text-rose-500/80">
+                  {/* <p className="text-xs uppercase tracking-[0.26em] text-rose-500/80">
                     Portrait Feature
-                  </p>
+                  </p> */}
                   {/* <p className="mt-2 text-sm leading-6 text-rose-900/68">
                     Foto Anda diletakkan langsung di hero section supaya terlihat pada first fold
                     dan memperkuat personal branding sejak halaman pertama dibuka.
