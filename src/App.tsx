@@ -207,7 +207,7 @@ export default function App() {
 
           <div className="hidden min-w-[8.5rem] sm:block">
             <p className="text-[10px] uppercase tracking-[0.22em] text-rose-500/85">
-              Ambient Audio
+              Audio Track
             </p>
             <p className="text-sm text-rose-900/72">
               {autoplayBlocked && !isAudioPlaying ? 'Tap to start music' : 'Please Please'}
