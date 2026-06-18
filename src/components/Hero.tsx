@@ -141,10 +141,10 @@ export default function Hero() {
                   <p className="text-xs uppercase tracking-[0.26em] text-rose-500/80">
                     Portrait Feature
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-rose-900/68">
+                  {/* <p className="mt-2 text-sm leading-6 text-rose-900/68">
                     Foto Anda diletakkan langsung di hero section supaya terlihat pada first fold
                     dan memperkuat personal branding sejak halaman pertama dibuka.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
