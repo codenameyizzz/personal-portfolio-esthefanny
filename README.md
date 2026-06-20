@@ -91,11 +91,3 @@ src/
 index.html      Entry HTML
 vite.config.ts  Konfigurasi Vite
 ```
-
-## Verifikasi
-
-Sudah saya cek lokal:
-
-- `npm run lint` sukses
-- `npm run build` sukses
-- `npm run dev` berhasil start di `localhost:3000`
